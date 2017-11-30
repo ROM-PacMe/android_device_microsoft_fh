@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
 
 # Inherit from msm8610-common
-$(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
+$(call inherit-product, device/microsoft/msm8610-common/msm8610.mk)
 
 # CMActions
 #PRODUCT_PACKAGES += \
