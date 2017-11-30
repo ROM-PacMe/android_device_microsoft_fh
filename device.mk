@@ -19,10 +19,10 @@
 #
 # Everything in this directory will become public
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/microsoft/fh
 
 # device specific vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
+$(call inherit-product-if-exists, vendor/microsoft/fh/fh-vendor.mk)
 
 # Ramdisk
  PRODUCT_COPY_FILES += \
@@ -43,5 +43,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
 
 # CMActions
-PRODUCT_PACKAGES += \
-    CMActions
+#PRODUCT_PACKAGES += \
+#    CMActions
