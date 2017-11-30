@@ -15,12 +15,12 @@
 #
 
 # inherit from common msm8610-common
--include device/motorola/msm8610-common/BoardConfigCommon.mk
+-include device/microsoft/msm8610-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/microsoft/otus
 
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
-TARGET_KERNEL_CONFIG := cm_otus_defconfig
+TARGET_KERNEL_SOURCE := kernel/microsoft/msm8610
+TARGET_KERNEL_CONFIG := fh_defconfig
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -34,11 +34,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := xt1505,xt1506,otus_umts,otus_umtsds,otus,otus_ds
+TARGET_OTA_ASSERT_DEVICE := fh,RM1091
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_otus
-TARGET_RECOVERY_DEVICE_MODULES := libinit_otus
+TARGET_INIT_VENDOR_LIB := libinit_fh
+TARGET_RECOVERY_DEVICE_MODULES := libinit_fh
 
 BOARD_SEPOLICY_DIRS += \
     $(LOCAL_PATH)/sepolicy
