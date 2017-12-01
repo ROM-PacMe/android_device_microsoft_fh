@@ -17,7 +17,7 @@
 # inherit from common msm8610-common
 -include device/microsoft/msm8610-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/microsoft/otus
+LOCAL_PATH := device/microsoft/fh
 
 TARGET_KERNEL_SOURCE := kernel/microsoft/msm8610
 TARGET_KERNEL_CONFIG := fh_defconfig
